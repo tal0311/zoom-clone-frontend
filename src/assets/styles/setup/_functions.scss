@@ -1,12 +1,5 @@
-@function rem($size) {
-  $remSize: $size / 16px;
-  @return ($remSize) * 1rem;
-}
+@use 'sass:math';
 
-@function em($pixels, $context: 16px) {
-  @return ($pixels/$context) * 1em;
-}
-
-@function lh($pixels, $context: 16px) {
-  @return ($pixels/$context);
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
 }
