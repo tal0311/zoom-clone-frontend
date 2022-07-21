@@ -1,0 +1,8 @@
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 100px 50px 3fr 1fr;
+  gap: 0px 0px;
+}
