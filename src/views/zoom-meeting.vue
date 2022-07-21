@@ -11,10 +11,16 @@
   <i class="fa-solid fa-record-vinyl"></i>
   <i class="fa-solid fa-microphone-slash"></i>
   <i class="fa-solid fa-video-slash"></i>
+  <!-- <MenuIcon /> -->
 </template>
 
 <script>
-export default {}
+import MenuIcon from '../components/icons/menu-dots.vue'
+export default {
+  components: {
+    MenuIcon,
+  },
+}
 </script>
 
 <style></style>
