@@ -1,5 +1,5 @@
 <template>
-  <nav class="app-nav">nav</nav>
+  <i class="fa-solid fa-microphone"></i>
 </template>
 
 <script>
