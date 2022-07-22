@@ -1,4 +1,21 @@
 .user-preview {
   width: 100%;
   justify-content: flex-end;
+  position: relative;
+  margin-inline-end: 1rem;
+  img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: '.';
+    position: absolute;
+    top: -5.5rem;
+    right: -0.2rem;
+    font-size: 100px;
+    color: lightgreen;
+  }
 }
