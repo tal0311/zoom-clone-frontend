@@ -1,16 +1,21 @@
 <template>
-  <nav class="app-nav">
-    <i class="fa-solid fa-house"></i>
-    <i class="fa-solid fa-message"></i>
-    <i class="fa-solid fa-clock"></i>
-    <i class="fa-solid fa-id-badge"></i>
-    <i class="fa-solid fa-vector-square"></i>
-    <i class="fa-solid fa-chalkboard"></i>
+  <nav class="app-nav flex space-between align-center">
+    <div class="filter-container">filter</div>
+    <nav-actions></nav-actions>
+    <div class="user-preview flex">
+      <p>user</p>
+    </div>
   </nav>
 </template>
 
 <script>
-export default {}
+import navActions from './nav-actions.vue'
+export default {
+  name: 'app-nav',
+  components: {
+    navActions,
+  },
+}
 </script>
 
 <style></style>

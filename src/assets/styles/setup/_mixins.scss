@@ -1,0 +1,23 @@
+@mixin navBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin-bottom: 0px;
+  }
+  i {
+    color: $clr6;
+    font-size: 1.2rem;
+  }
+  &:hover {
+    i {
+      color: $clr5;
+    }
+  }
+  &.active {
+    i {
+      color: $clr3;
+    }
+  }
+}
