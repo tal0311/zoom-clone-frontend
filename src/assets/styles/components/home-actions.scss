@@ -1,0 +1,12 @@
+.home-actions-container {
+  .action {
+    width: 100px;
+    height: 100px;
+    border-radius: 2.5em;
+    margin: 2rem;
+  }
+  &.flex {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}

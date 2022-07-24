@@ -4,7 +4,7 @@
     <div class="settings">
       <i class="fa-solid fa-gear"></i>
     </div>
-    <main class="main-container">
+    <main class="main-container flex">
       <home-actions></home-actions>
       <upcoming-events></upcoming-events>
     </main>
