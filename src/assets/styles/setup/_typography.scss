@@ -1,4 +1,5 @@
 @font-face {
-    font-family: Bahnschrift;
-    src: url(~@/assets/fonts/Bahnschrift/bahnschrift.ttf);
+  font-family: lato-regular;
+  src: local('lato-regular'),
+    url(@/assets/fonts/Lato-regular.ttf) format('truetype');
 }

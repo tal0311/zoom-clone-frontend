@@ -1,9 +1,7 @@
 <template>
   <section class="app-container">
     <app-nav></app-nav>
-    <div class="settings">
-      <i class="fa-solid fa-gear"></i>
-    </div>
+    <app-settings></app-settings>
     <main class="main-container flex">
       <home-actions></home-actions>
       <upcoming-events></upcoming-events>
@@ -14,6 +12,7 @@
 
 <script>
 import appFooter from './../components/app-footer.vue'
+import appSettings from '../components/app-settings.vue'
 import appNav from '../components/app-nav.vue'
 import upcomingEvents from './../components/upcoming-events.vue'
 import homeActions from './../components/home-actions.vue'
@@ -22,7 +21,7 @@ export default {
   components: {
     homeActions,
     upcomingEvents,
-    // appNav,
+    appSettings,
     appNav,
     appFooter,
   },

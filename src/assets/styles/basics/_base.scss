@@ -1,6 +1,3 @@
-::selection {
-}
-
 * {
   box-sizing: border-box;
 }
@@ -12,6 +9,7 @@ html {
   height: 100%;
 }
 body {
+  font-family: Lato-regular;
   color: $clr5;
   margin: 0;
   overflow: hidden;

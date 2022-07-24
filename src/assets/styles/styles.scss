@@ -1,5 +1,5 @@
 // SETUP
-// @import 'setup/typography';
+@import 'setup/typography';
 @import 'setup/variables';
 @import 'setup/mixins';
 // @import 'setup/functions';
@@ -12,8 +12,11 @@
 // COMPONENTS
 @import 'components/home-page.scss';
 @import 'components/app-nav.scss';
+@import 'components/app-settings.scss';
 @import 'components/actions-container.scss';
 @import 'components/user-preview.scss';
 @import 'components/app-filter.scss';
 @import 'components/home-actions.scss';
 @import 'components/main-container.scss';
+@import 'components/upcoming-events.scss';
+@import 'components/upcoming-list.scss';

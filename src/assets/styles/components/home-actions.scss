@@ -1,12 +1,26 @@
 .home-actions-container {
   .action {
-    width: 100px;
-    height: 100px;
-    border-radius: 2.5em;
+    width: 120px;
+    height: 120px;
+    border-radius: 2rem;
     margin: 2rem;
+    background: none;
+    border: none;
+    &:not(:first-child) {
+      background-color: $clr3;
+    }
+    &:first-child {
+      background-color: $clr4;
+    }
+    &.fa-solid {
+      color: $clr1;
+      font-size: 48px;
+    }
   }
   &.flex {
     flex-wrap: wrap;
     width: 50%;
+    height: 50%;
+    margin: auto;
   }
 }
