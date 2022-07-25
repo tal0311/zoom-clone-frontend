@@ -1,0 +1,22 @@
+.filter-container {
+  height: 100%;
+
+  .fa-solid {
+    position: relative;
+    left: 2.5rem;
+  }
+  input {
+    margin-inline-start: 1rem;
+    padding-left: 2rem;
+    height: 50%;
+    border-radius: 0.8em;
+    background: $clr7;
+    border: none;
+    &::placeholder {
+      color: $clr5;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

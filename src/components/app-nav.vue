@@ -1,12 +1,13 @@
 <template>
   <nav class="app-nav flex space-between align-center">
-    <div class="filter-container">filter</div>
+    <app-search></app-search>
     <nav-actions></nav-actions>
     <user-preview></user-preview>
   </nav>
 </template>
 
 <script>
+import appSearch from './app-search.vue'
 import navActions from './nav-actions.vue'
 import userPreview from './user-preview.vue'
 export default {
@@ -14,6 +15,7 @@ export default {
   components: {
     navActions,
     userPreview,
+    appSearch,
   },
 }
 </script>
