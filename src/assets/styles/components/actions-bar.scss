@@ -1,0 +1,9 @@
+.actions-bar {
+  width: 100%;
+  background: red;
+  height: 10vh;
+  display: flex;
+  &.flex {
+    justify-content: space-between;
+  }
+}
