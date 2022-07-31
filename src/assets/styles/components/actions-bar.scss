@@ -1,9 +1,14 @@
 .actions-bar {
   width: 100%;
-  background: red;
+  background-color: #000;
   height: 10vh;
   display: flex;
   &.flex {
     justify-content: space-between;
+  }
+
+  .action {
+    background-color: $clr6;
+    font-size: 2em;
   }
 }

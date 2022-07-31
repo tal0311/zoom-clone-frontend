@@ -22,3 +22,12 @@
     }
   }
 }
+
+@mixin mute-opt-btns {
+  border: none;
+  padding: 0.5em 1.4em;
+  border-radius: 0.2em;
+  background: $clr3;
+  color: #fff;
+  margin-inline-end: 0.2rem;
+}

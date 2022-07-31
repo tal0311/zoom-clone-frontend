@@ -16,13 +16,9 @@
         padding: 0.2em 1.4em 0.2em 0.5em;
       }
       // background-color: re;
-      .mute-btn-screen {
-        background: $clr3;
-        color: #fff;
-      }
+      .mute-btn-screen,
       .menu-btn-screen {
-        background: $clr3;
-        color: #fff;
+        @include mute-opt-btns;
       }
     }
   }
