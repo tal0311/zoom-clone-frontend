@@ -1,16 +1,18 @@
-.grid-container {
-  display: grid;
-  margin: 1rem 3rem;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 5px;
-  overflow: auto;
-  height: 90%;
-}
+.screens {
+  &.grid-container {
+    display: grid;
+    margin: 1rem 3rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    overflow: auto;
+    height: 90%;
+  }
 
-.grid-item {
-  background-color: lightblue;
-  aspect-ratio: 1;
-  // height: 200px;
+  .grid-item {
+    background-color: lightblue;
+    aspect-ratio: 1;
+    // height: 200px;
+  }
 }
