@@ -1,0 +1,29 @@
+.screen-preview {
+  &.grid-item {
+    background-color: rgba(85, 85, 85, 0.333);
+    aspect-ratio: 1;
+    color: #ffff;
+    position: relative;
+    .info-container {
+      justify-content: flex-end;
+      .user-title {
+        position: absolute;
+        bottom: 0;
+        left: 0rem;
+        text-align: start;
+        margin-bottom: 4px;
+        background-color: #333;
+        padding: 0.2em 1.4em 0.2em 0.5em;
+      }
+      // background-color: re;
+      .mute-btn-screen {
+        background: $clr3;
+        color: #fff;
+      }
+      .menu-btn-screen {
+        background: $clr3;
+        color: #fff;
+      }
+    }
+  }
+}
