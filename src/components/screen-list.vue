@@ -1,5 +1,5 @@
 <template>
-  <div class="screens grid-container">
+  <div class="screen-list grid-container">
     <screen-preview v-for="screen in screens" :key="screen._id">
       ></screen-preview
     >
@@ -26,9 +26,6 @@ export default {
         },
         {
           _id: '104',
-        },
-        {
-          _id: '105',
         },
       ],
     }

@@ -1,4 +1,4 @@
-.screens {
+.screen-list {
   &.grid-container {
     display: grid;
     margin: 1rem 3rem;
@@ -11,8 +11,8 @@
   }
 
   .grid-item {
-    background-color: lightblue;
+    background-color: #5555;
     aspect-ratio: 1;
-    // height: 200px;
+    color: #ffff;
   }
 }

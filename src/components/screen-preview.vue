@@ -1,8 +1,12 @@
 <template>
   <section class="grid-item">
-    <h4>user name</h4>
-    <button>opt</button>
-    <button>mute</button>
+    <div class="info-container flex align-center">
+      <p>user name</p>
+      <button>mute</button>
+      <button>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+    </div>
   </section>
 </template>
 
