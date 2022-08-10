@@ -2,20 +2,20 @@
   <section class="app-container">
     <app-nav></app-nav>
     <app-settings></app-settings>
-    <main class="main-container flex">
-      <home-actions></home-actions>
-      <upcoming-events></upcoming-events>
-    </main>
+
+    <router-view></router-view>
+
     <app-footer></app-footer>
   </section>
 </template>
 
 <script>
+import upcomingEvents from './../components/upcoming-events.vue'
+import homeActions from './../components/home-actions.vue'
 import appFooter from './../components/app-footer.vue'
 import appSettings from '../components/app-settings.vue'
 import appNav from '../components/app-nav.vue'
-import upcomingEvents from './../components/upcoming-events.vue'
-import homeActions from './../components/home-actions.vue'
+
 export default {
   name: 'zoom-app',
   components: {
