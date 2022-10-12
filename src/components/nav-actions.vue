@@ -1,34 +1,52 @@
 <template>
   <section class="actions-container flex space-between">
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-house"></i>
-      <p>Home</p>
-    </div>
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-message"></i>
-      <p>Chat</p>
-    </div>
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-clock"></i>
-      <p>Meetings</p>
-    </div>
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-id-badge"></i>
-      <p>Contacts</p>
-    </div>
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-vector-square"></i>
-      <p>Apps</p>
-    </div>
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-chalkboard"></i>
-      <p>Whiteboard</p>
+    <div
+      v-for="({ iconClass, label }, idx) in navItems"
+      :key="idx"
+      class="icon-wrapper"
+    >
+      <router-link :to="{ name: label }">
+        <i :class="iconClass"></i>
+        <p>{{ label }}</p>
+      </router-link>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'nav-actions',
+  data() {
+    return {
+      navItems: [
+        {
+          iconClass: 'fa-solid fa-house',
+          label: 'Home',
+        },
+        {
+          iconClass: 'fa-solid fa-message',
+          label: 'Chat',
+        },
+        {
+          iconClass: 'fa-solid fa-clock',
+          label: 'Meetings',
+        },
+        {
+          iconClass: 'fa-solid fa-id-badge',
+          label: 'Contacts',
+        },
+        {
+          iconClass: 'fa-solid fa-vector-square',
+          label: 'Apps',
+        },
+        {
+          iconClass: 'fa-solid fa-chalkboard',
+          label: 'Whiteboard',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style></style>

@@ -18,32 +18,32 @@ const router = createRouter({
       children: [
         {
           path: '/',
-          name: 'home',
+          name: 'Home',
           component: homeView,
         },
         {
           path: '/chat',
-          name: 'chat',
+          name: 'Chat',
           component: chatView,
         },
         {
           path: '/meetings',
-          name: 'meetings',
+          name: 'Meetings',
           component: meetingsView,
         },
         {
           path: '/contact',
-          name: 'contact',
+          name: 'Contacts',
           component: contactsView,
         },
         {
           path: '/apps',
-          name: 'apps',
+          name: 'Apps',
           component: appsView,
         },
         {
           path: '/board',
-          name: 'board',
+          name: 'WhiteBoard',
           component: board,
         },
       ],
