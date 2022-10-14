@@ -3,7 +3,7 @@
     <div
       v-for="({ iconClass, label }, idx) in navItems"
       :key="idx"
-      class="icon-wrapper"
+      class="icon-wrapper flex"
     >
       <router-link :to="{ name: label }">
         <i :class="iconClass"></i>
@@ -41,7 +41,7 @@ export default {
         },
         {
           iconClass: 'fa-solid fa-chalkboard',
-          label: 'Whiteboard',
+          label: 'WhiteBoard',
         },
       ],
     }

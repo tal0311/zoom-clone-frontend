@@ -1,7 +1,9 @@
 @mixin navBtn {
+  // background: lightcoral;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   p {
     margin-top: 8px;
@@ -19,6 +21,15 @@
   &.active {
     i {
       color: $clr3;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    &.router-link-exact-active {
+      i {
+        color: $clr3;
+      }
     }
   }
 }
