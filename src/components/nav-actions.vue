@@ -1,5 +1,5 @@
 <template>
-  <section class="actions-container flex space-between">
+  <section class="nav-actions-container flex space-between">
     <div
       v-for="({ iconClass, label }, idx) in navItems"
       :key="idx"

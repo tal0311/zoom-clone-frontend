@@ -9,6 +9,12 @@ const store = createStore({
     users: [],
     currMeeting: '',
     userMsg: null,
+    userSettings: {
+      height: window.innerHeight - 100,
+      width: window.innerWidth - 400,
+      left: 200,
+      top: 50,
+    },
   },
   getters: {
     getStream(state) {
@@ -22,6 +28,9 @@ const store = createStore({
     },
     getMeeting(state) {
       return state.meeting
+    },
+    getUserSettings(state) {
+      return state.userSettings
     },
   },
   mutations: {
