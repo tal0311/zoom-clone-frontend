@@ -1,14 +1,16 @@
 .upcoming-card {
-  width: 50%;
-  height: 500px;
+  width: 42%;
+  height: 63vh;
   .card-header {
     background-image: url('@/assets/images/bcg-upcoming.jpg');
     height: 33%;
     width: 100%;
+
     background-position: center;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    background-size: cover;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
   }
   border: 1px solid $clr7;
-  border-radius: 1em;
+  border-radius: 0.8em;
 }
